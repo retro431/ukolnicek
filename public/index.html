@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Úkolníček</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="kontejner">
+    <h1>Úkolníček</h1>
+
+    <!-- Formulář pro přidání úkolu -->
+    <form id="formular">
+      <input type="text" id="nazev" placeholder="Co je potřeba udělat?" autocomplete="off">
+      <select id="priorita">
+        <option value="nizka">Nízká</option>
+        <option value="stredni" selected>Střední</option>
+        <option value="vysoka">Vysoká</option>
+      </select>
+      <button type="submit">Přidat</button>
+    </form>
+
+    <!-- Místo pro chybové / informační hlášky -->
+    <p id="zprava" class="zprava"></p>
+
+    <!-- Výpis úkolů -->
+    <ul id="seznam"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
